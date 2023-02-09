@@ -1,20 +1,11 @@
-import { Route, Routes } from "react-router-dom";
-import Layout from "../common/layout";
-
-import Login from "../Login";
-import SignUp from "../SignUp";
+import Layout from "../common/Layout";
 
 function Main(props) {
-  console.log("main: ", props);
-
   return (
     <Layout>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/signUp" element={<SignUp/>}/>
-      </Routes>
+      <div>main</div>
     </Layout>
-  );
+  )
 }
 
 export default Main;
