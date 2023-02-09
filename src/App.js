@@ -1,16 +1,19 @@
-
-import './App.css';
+import "./App.css";
+import "./css/gnb.css";
+import "./css/swiper.css";
+import "./css/top.css";
+import "./css/cloneTstory.css";
 
 import { Route, Routes } from "react-router-dom";
-import Login from './views/component/Login';
-import Main from './views/component/Main';
+import Main from "./views/component/Main";
+import Blog from "./views/component/Blog";
 
 function App() {
   return (
-    <div className='App'>
+    <div className="App" style={{minWidth: '1280px'}}>
       <Routes>
-        <Route path="/" exact element={<Login/>}/>
-        <Route path="/main" exact element={<Main/>}/>
+        <Route path="/*" element={<Main />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </div>
   );
